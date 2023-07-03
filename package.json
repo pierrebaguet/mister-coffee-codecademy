@@ -1,0 +1,27 @@
+{
+  "name": "white-desk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "browserslist": [
+    "> 0.5%, last 2 versions, not dead"
+  ],
+  "scripts": {
+    "start": "parcel -p 3000 src/index.html",
+    "clean": "rm -rf dist/*",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:parcel": "parcel build src/index.html --no-content-hash --no-minify --no-source-maps --public-url ./",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "node-sass": "^9.0.0",
+    "normalize.css": "^8.0.1",
+    "parcel": "^2.9.3"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
